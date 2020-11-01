@@ -1,0 +1,88 @@
+@media screen and (max-width: 425px) {
+  
+  #navbar{
+    height: 45vh;
+    width: 12vw;
+  }
+  .section{
+    height: 100vh;
+  }
+
+  .bold{
+    font-weight: 500;
+  }
+
+  .intro{
+    padding-left: 13%;
+  }
+  .intro h3{
+    font-weight: 600;
+    font-size: 6.5vw;
+  }
+
+  .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #background-header{
+    width: 40vw;
+  }
+  .background h3{
+    font-weight: 400;
+    font-size: 6vw;
+    margin-bottom: 25%;
+  }
+  .background p{
+    font-weight: 300;
+    font-size: 4.5vw;
+  }
+
+
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills-header{
+    width: 40vw;
+  }
+  .skills h3{
+    font-weight: 400;
+    font-size: 6vw;
+    margin-bottom: 15%;
+  }
+  #skills-content h5{
+    font-size: 5vw;
+    margin-bottom: 10%;
+  }
+  #skills-content p{
+    font-size: 4vw;
+  }
+
+
+
+
+
+  .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects h3{
+    font-weight: 400;
+    font-size: 6vw;
+    margin-bottom: 15%;
+  }
+  #projects-content h5{
+    font-size: 5vw;
+    margin: 10px 0 15px 0;
+
+  }
+  #projects-content p{
+    font-size: 4vw;
+    margin: 0;
+  }
+
+}

@@ -1,18 +1,92 @@
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: whitesmoke;
+  scroll-snap-type: y mandatory;
 }
+
+@media screen and (min-width: 425px) {
+  html { 
+    scroll-snap-type: y mandatory;
+  }
+  .section{
+    scroll-snap-align: start;
+  }
+}
+
+
+
 
 .section {
   display: flex;
   flex-direction: column;
-  padding: 10% 10%;
-  height: 70vh;
+  padding: 10% 7% 10% 10%;
+  height: 80vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+/*********** NAVBAR *************/
+#navbar {
+  height: 50vh;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0%;
+}
+#navbar a{
+  text-decoration: none;
+}
+#navbar img:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#resume{
+  height: 32px;
+  width: 29px;
+  border-radius: 8%;
+}
+#github{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+#email{
+  height: 28px;
+  width: 32px;
+  border-radius: 8%;
+}
+#linkedin{
+  height: 32px;
+  width: 32px;
+  border-radius: 8%;
+}
+#blog{
+  height: 32px;
+  width: 32px;
+  border-radius: 8%;
 }
 
 
-/* INTRO */
+
+
+
+
+/************ INTRO ***************/
+.intro {
+  padding-left: 17%;
+}
 .intro h3{
-  font-weight: 200;
+  font-weight: 300;
   font-size: 4vw;
 }
 
@@ -30,15 +104,16 @@ body{
   margin-left: 4%;
 }
 .background h3{
-  text-align: right;
+  text-align: center;
   margin-top: 0;
   font-size: 4vw;
-  font-weight: 200;
+  font-weight: 400;
+  color: rgb(86, 138, 250);
 }
 .background p{
   margin-top: 1%;
   font-size: 2vw;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /***************** SKILLS ***************/
@@ -59,11 +134,11 @@ body{
 #skills-content h5{
   margin-top: 0;
   font-size: 2.5vw;
-  font-weight: 200;
+  font-weight: 300;
 }
 #skills-content p{
   font-size: 2vw;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0;
 }
 #proficient{
@@ -74,11 +149,80 @@ body{
 }
 .skills h3{
   padding-right: 5%;
-  text-align: right;
+  text-align: center;
   margin-top: 0;
   font-size: 4vw;
-  font-weight: 200;
+  font-weight: 400;
+  color: rgb(86, 138, 250);
 }
 
 
 /************** PROJECTS *************/
+.projects {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.projects h3{
+  padding-right: 5%;
+  text-align: center;
+  margin-top: 0;
+  font-size: 4vw;
+  font-weight: 400;
+  color: rgb(86, 138, 250);
+}
+#projects-content h5:hover{
+  cursor: pointer;
+  font-weight: 500;
+  color: rgb(101, 146, 244);
+  /* text-shadow: 2px 2px 3px black; */
+}
+#projects-header{
+  width: 25vw;
+  margin: 6px;
+}
+#projects-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: 6px;
+}
+#projects-content h5{
+  margin: 0;
+  font-size: 2.5vw;
+  font-weight: 300;
+  color: rgb(86, 138, 250);
+}
+#projects-content p{
+  font-weight: 200;
+  font-size: 2vw;
+}
+.project-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.quizcard {
+  align-items: flex-end;
+}
+.quizcard p{
+  text-align: right;
+}
+
+
+.fcebook {
+  align-items: flex-start;
+}
+.fcebook p{
+  text-align: left;
+}
+
+
+.cocktail {
+  align-items: flex-end;
+}
+.cocktail p{
+  text-align: right;
+}
