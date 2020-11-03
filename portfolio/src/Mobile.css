@@ -84,5 +84,11 @@
     font-size: 4vw;
     margin: 0;
   }
+  .chosen{
+    display: none;
+  }
+  .blur{
+    opacity: 1;
+  }
 
 }
