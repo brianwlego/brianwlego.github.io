@@ -161,6 +161,7 @@ a {
 .projects {
   flex-direction: row;
   justify-content: space-evenly;
+  height: fit-content;
 }
 .projects h3{
   padding-right: 5%;
