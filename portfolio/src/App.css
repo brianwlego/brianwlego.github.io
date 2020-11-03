@@ -173,7 +173,7 @@ a {
 #projects-content h5:hover{
   cursor: pointer;
   font-weight: 500;
-  color: rgb(101, 146, 244);
+  /* color: rgb(101, 146, 244); */
   /* text-shadow: 2px 2px 3px black; */
 }
 #projects-header{
@@ -205,7 +205,7 @@ a {
 }
 .project-img-wrapper{
   width: 55vw;
-  height: 25vh;
+  min-height: 25vh;
   align-items: center;
   display: flex;
   overflow: auto;
