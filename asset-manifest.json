@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e7dab71.chunk.css",
-    "main.js": "/static/js/main.592a0a31.chunk.js",
-    "main.js.map": "/static/js/main.592a0a31.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0a485aea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0a485aea.js.map",
-    "static/js/2.925ffdb0.chunk.js": "/static/js/2.925ffdb0.chunk.js",
-    "static/js/2.925ffdb0.chunk.js.map": "/static/js/2.925ffdb0.chunk.js.map",
-    "static/js/3.5e42bd10.chunk.js": "/static/js/3.5e42bd10.chunk.js",
-    "static/js/3.5e42bd10.chunk.js.map": "/static/js/3.5e42bd10.chunk.js.map",
+    "main.css": "/static/css/main.0f929761.chunk.css",
+    "main.js": "/static/js/main.11ce6197.chunk.js",
+    "main.js.map": "/static/js/main.11ce6197.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5614878.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5614878.js.map",
+    "static/js/2.62879f74.chunk.js": "/static/js/2.62879f74.chunk.js",
+    "static/js/2.62879f74.chunk.js.map": "/static/js/2.62879f74.chunk.js.map",
+    "static/js/3.71ff7017.chunk.js": "/static/js/3.71ff7017.chunk.js",
+    "static/js/3.71ff7017.chunk.js.map": "/static/js/3.71ff7017.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6e7dab71.chunk.css.map": "/static/css/main.6e7dab71.chunk.css.map",
-    "static/js/2.925ffdb0.chunk.js.LICENSE.txt": "/static/js/2.925ffdb0.chunk.js.LICENSE.txt",
+    "static/css/main.0f929761.chunk.css.map": "/static/css/main.0f929761.chunk.css.map",
+    "static/js/2.62879f74.chunk.js.LICENSE.txt": "/static/js/2.62879f74.chunk.js.LICENSE.txt",
+    "static/media/1Login.fd533dde.png": "/static/media/1Login.fd533dde.png",
+    "static/media/2HomePage.4da0ae0c.png": "/static/media/2HomePage.4da0ae0c.png",
+    "static/media/3Profile.39622cfc.png": "/static/media/3Profile.39622cfc.png",
+    "static/media/4HomePageOpen.2294c608.png": "/static/media/4HomePageOpen.2294c608.png",
+    "static/media/5QuizShow.98035585.png": "/static/media/5QuizShow.98035585.png",
+    "static/media/6QuizShowAnswer.fdfe7366.png": "/static/media/6QuizShowAnswer.fdfe7366.png",
+    "static/media/7DeckShow.a77144c0.png": "/static/media/7DeckShow.a77144c0.png",
+    "static/media/8QuizEdit.2dfaba87.png": "/static/media/8QuizEdit.2dfaba87.png",
+    "static/media/9DeckEdit.27673800.png": "/static/media/9DeckEdit.27673800.png",
     "static/media/BrianLegoResume.0f7d2fe1.pdf": "/static/media/BrianLegoResume.0f7d2fe1.pdf",
     "static/media/github.9c618cae.png": "/static/media/github.9c618cae.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a485aea.js",
-    "static/js/2.925ffdb0.chunk.js",
-    "static/css/main.6e7dab71.chunk.css",
-    "static/js/main.592a0a31.chunk.js"
+    "static/js/runtime-main.e5614878.js",
+    "static/js/2.62879f74.chunk.js",
+    "static/css/main.0f929761.chunk.css",
+    "static/js/main.11ce6197.chunk.js"
   ]
 }
