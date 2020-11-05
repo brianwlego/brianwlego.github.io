@@ -40,8 +40,19 @@ function Projects(){
     }
   }
 
+  const sectionClickhandler = (e) => {
+    console.log(e.target)
+    if (e.target.className === "project-img"){
+      
+    } else {
+      setChosenCC("")
+      setChosenQC("")
+    }
+  }
+
+
   return(
-    <section className="section projects" >
+    <section className="section projects" onClick={(e)=>sectionClickhandler(e)}>
       <div id="projects-header">
         <h3>Projects</h3>
       </div>
