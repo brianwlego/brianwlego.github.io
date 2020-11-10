@@ -59,7 +59,7 @@ function Projects(){
       <div id="projects-content">
         <div className="project-wrapper quizcard">
           <a href="https://quizcard-frontend.herokuapp.com/"  target="_blank" rel="noreferrer" ><h5>QuizCard &#8614;</h5></a>
-          <p>A study aid that uses Quizzes and FlashCards to help students. Allows them to also create their own Quizzes/FlashCards for a more specialized experience.</p>
+          <p>A study aid that uses Quizzes and FlashCards. Allows users to also create their own Quizzes/FlashCards for a more personalized experience.</p>
           {chosenQC !== "" ? <img alt="" src={chosenQC} className="chosen" onClick={()=>setChosenQC("")}/> : null}
           <div class="project-img-wrapper" onClick={(e)=>clickHandlerQC(e)} onScroll={()=>setChosenQC("")} >
             <Image img={Login} chosen={chosenQC !== "" ? true : false} />
@@ -74,7 +74,7 @@ function Projects(){
           </div>
         </div>
         <div className="project-wrapper fcebook">
-          <a href="" target="_blank" rel="noreferrer">
+          <a href="https://notfcebook.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>!fcebook &#8614;</h5>
           </a>
           
