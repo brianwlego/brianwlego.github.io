@@ -18,9 +18,16 @@ import CC4 from '../CCImages/4cc.png'
 import CC5 from '../CCImages/5cc.png'
 import CC6 from '../CCImages/6cc.png'
 
+import FB1 from '../FBImages/1fb.png'
+import FB2 from '../FBImages/2fb.png'
+import FB3 from '../FBImages/3fb.png'
+import FB4 from '../FBImages/4fb.png'
+import FB5 from '../FBImages/5fb.png'
+
 function Projects(){
   const [chosenQC, setChosenQC] = useState("")
   const [chosenCC, setChosenCC] = useState("")
+  const [chosenFB, setChosenFB] = useState("")
 
   const clickHandlerQC = (e) => {
     const ele = e.target.src
@@ -40,6 +47,15 @@ function Projects(){
     }
   }
 
+  const clickHandlerFB = (e) => {
+    const ele = e.target.src
+    if (ele === chosenFB){
+      setChosenFB("")
+    } else{
+      setChosenFB(e.target.src)
+    }
+  }
+
   const sectionClickhandler = (e) => {
     console.log(e.target)
     if (e.target.className === "project-img"){
@@ -47,6 +63,7 @@ function Projects(){
     } else {
       setChosenCC("")
       setChosenQC("")
+      setChosenFB("")
     }
   }
 
@@ -77,8 +94,15 @@ function Projects(){
           <a href="https://notfcebook.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>!fcebook &#8614;</h5>
           </a>
-          
           <p>A social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts.</p>
+          {chosenFB !== "" ? <img alt="" src={chosenFB} className="chosen" onClick={()=>setChosenFB("")}/> : null}
+          <div class="project-img-wrapper" onClick={(e)=>clickHandlerFB(e)} onScroll={()=>setChosenFB("")} >
+            <Image img={FB1} chosen={chosenFB !== "" ? true : false} />
+            <Image img={FB2} chosen={chosenFB !== "" ? true : false} />
+            <Image img={FB3} chosen={chosenFB !== "" ? true : false} />
+            <Image img={FB4} chosen={chosenFB !== "" ? true : false} />
+            <Image img={FB5} chosen={chosenFB !== "" ? true : false} />
+          </div>
         </div>
         <div className="project-wrapper cocktail">
           <a href="https://cocktail-companion.herokuapp.com/" target="_blank" rel="noreferrer">
@@ -88,12 +112,12 @@ function Projects(){
           <p>Single page application which allows users to search cocktails based on ingredients or create their own.</p>
           {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
           <div class="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
-          <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
-          <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
-          <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
-          <Image img={CC4} chosen={chosenCC !== "" ? true : false} />
-          <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
-          <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC4} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
           </div>
         </div>
       </div>
