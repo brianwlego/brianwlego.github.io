@@ -19,7 +19,7 @@ body{
 .section {
   display: flex;
   flex-direction: column;
-  padding: 10% 7% 10% 10%;
+  padding: 10% 15% 10% 15%;
   height: 80vh;
 }
 
@@ -79,11 +79,9 @@ a {
 
 
 
-
-
 /************ INTRO ***************/
 .intro {
-  padding-left: 17%;
+  padding: 10% 20% 10% 25%;
 }
 .intro h3{
   font-weight: 300;
@@ -205,7 +203,7 @@ a {
   margin-bottom: 5%;
 }
 .project-img-wrapper{
-  width: 55vw;
+  width: 50vw;
   min-height: 25vh;
   align-items: center;
   display: flex;
