@@ -94,7 +94,7 @@ function Projects(){
           <a href="https://notfcebook.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>!fcebook &#8614;</h5>
           </a>
-          <p>A social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts.</p>
+          <p>A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts.</p>
           {chosenFB !== "" ? <img alt="" src={chosenFB} className="chosen" onClick={()=>setChosenFB("")}/> : null}
           <div class="project-img-wrapper" onClick={(e)=>clickHandlerFB(e)} onScroll={()=>setChosenFB("")} >
             <Image img={FB1} chosen={chosenFB !== "" ? true : false} />
@@ -109,7 +109,7 @@ function Projects(){
             <h5>Cocktail Companion &#8614;</h5>
           </a>
           
-          <p>Single page application which allows users to search cocktails based on ingredients or create their own.</p>
+          <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
           {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
           <div class="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
             <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
