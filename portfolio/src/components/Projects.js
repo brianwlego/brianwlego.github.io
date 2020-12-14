@@ -57,7 +57,6 @@ function Projects(){
   }
 
   const sectionClickhandler = (e) => {
-    console.log(e.target)
     if (e.target.className === "project-img"){
       
     } else {
