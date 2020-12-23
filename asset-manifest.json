@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6cf9b1d4.chunk.css",
-    "main.js": "/static/js/main.d6168abe.chunk.js",
-    "main.js.map": "/static/js/main.d6168abe.chunk.js.map",
+    "main.js": "/static/js/main.fb519207.chunk.js",
+    "main.js.map": "/static/js/main.fb519207.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5614878.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5614878.js.map",
     "static/js/2.d1a93daa.chunk.js": "/static/js/2.d1a93daa.chunk.js",
@@ -32,13 +32,13 @@
     "static/media/7DeckShow.a77144c0.png": "/static/media/7DeckShow.a77144c0.png",
     "static/media/8QuizEdit.2dfaba87.png": "/static/media/8QuizEdit.2dfaba87.png",
     "static/media/9DeckEdit.27673800.png": "/static/media/9DeckEdit.27673800.png",
-    "static/media/BrianLegoResume.3db0e406.pdf": "/static/media/BrianLegoResume.3db0e406.pdf",
+    "static/media/BrianLegoResume.841adcb5.pdf": "/static/media/BrianLegoResume.841adcb5.pdf",
     "static/media/github.9c618cae.png": "/static/media/github.9c618cae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e5614878.js",
     "static/js/2.d1a93daa.chunk.js",
     "static/css/main.6cf9b1d4.chunk.css",
-    "static/js/main.d6168abe.chunk.js"
+    "static/js/main.fb519207.chunk.js"
   ]
 }
