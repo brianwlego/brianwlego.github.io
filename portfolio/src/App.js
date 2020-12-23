@@ -8,10 +8,10 @@ import Projects from './components/Projects';
 
 function App() {
   const dummyFetches = () => {
-    fetch('https://quizcard-frontend.herokuapp.com/')
+    fetch('https://quizcard-frontend.herokuapp.com/login')
     fetch('https://quizcard-backend.herokuapp.com/')
 
-    fetch('https://notfcebook-backend.herokuapp.com/')
+    fetch('https://notfcebook-backend.herokuapp.com/login')
     fetch('https://notfcebook.herokuapp.com/')
 
     fetch('https://cocktail-companion.herokuapp.com/')
