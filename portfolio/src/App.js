@@ -38,7 +38,7 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <div className="App">
-        <NavBar toggle={toggleTheme}/>
+        <NavBar toggle={toggleTheme} theme={theme}/>
         <Intro />
         <Background />
         <Skills />

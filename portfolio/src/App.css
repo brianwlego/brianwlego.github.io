@@ -19,7 +19,8 @@ body{
   display: flex;
   flex-direction: column;
   padding: 10% 15% 10% 15%;
-  height: 80vh;
+  min-height: 85vh;
+  height: fit-content;
 }
 
 a {
@@ -32,6 +33,10 @@ a {
 }
 
 /*********** NAVBAR *************/
+.invert {
+  filter: invert(1)
+}
+
 #navbar {
   height: 50vh;
   width: 5vw;
@@ -153,12 +158,21 @@ a {
 }
 #frontend{
   margin: 0 3vw 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #backend{
   margin: 0 3vw 0 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #dbtools{
   margin: 0 0 0 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .skills h3{
   padding-right: 5%;
