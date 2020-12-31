@@ -75,10 +75,10 @@ a {
   border-radius: 8%;
 }
 #darkmode{
+  height: 3vh;
   background: none;
   border: none;
   border-radius: 50%;
-  font-size: 2.8vh;
 }
 #darkmode:hover{
   cursor: pointer;
@@ -151,10 +151,13 @@ a {
   font-weight: 200;
   margin: 0;
 }
-#proficient{
+#frontend{
   margin: 0 3vw 0 0;
 }
-#exposure{
+#backend{
+  margin: 0 3vw 0 3vw;
+}
+#dbtools{
   margin: 0 0 0 3vw;
 }
 .skills h3{

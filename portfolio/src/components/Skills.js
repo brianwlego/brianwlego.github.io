@@ -8,22 +8,32 @@ function Skills(){
         <h3>Skills</h3>
       </div>
       <div id="skills-content">
-        <div id="proficient">
-          <h5>Proficient</h5>
+        <div id="frontend">
+          <h5>Frontend</h5>
           <p>JavaScript</p>
           <p>React</p>
-          <p>Ruby</p>
-          <p>Ruby on Rails</p>
           <p>Redux</p>
           <p>HTML</p>
           <p>CSS</p>
-          <p>GitHub</p>
+          <p>ERB</p>
+          <p>EJS</p>
         </div>
-        <div id="exposure">
-          <h5>Exposure</h5>
-          <p>AWS - s3</p>
+        <div id="backend">
+          <h5>Backend</h5>
+          <p>Ruby</p>
+          <p>Ruby on Rails</p>
+          <p>Node.js</p>
+          <p>Express</p>
+        </div>
+        <div id="dbtools">
+          <h5>DB/Tools</h5>
           <p>SQL</p>
           <p>Postgresql</p>
+          <p>mySQL</p>
+          <p>MongoDB</p>
+          <p>AWS - s3</p>
+          <p>Git</p>
+          <p>GitHub</p>
         </div>
       </div>
     </section>
