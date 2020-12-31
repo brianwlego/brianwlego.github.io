@@ -74,6 +74,19 @@ a {
   width: 32px;
   border-radius: 8%;
 }
+#darkmode{
+  background: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.8vh;
+}
+#darkmode:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#darkmode:active{
+  border: none;
+}
 
 
 

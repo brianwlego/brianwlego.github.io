@@ -6,13 +6,13 @@ import github from '../icons/github.png'
 import linkedin from '../icons/linkedin.png'
 import BrianLegoResume from '../BrianLegoResume.pdf'
 
-function NavBar(){
+function NavBar({toggle}){
 
   
 
   return(
     <div id="navbar">
-      <button id="theme-toggle" onClick={''}>Dark</button>
+      <button id="darkmode" onClick={() => toggle()}>&#x1f317;</button>
       <a href={BrianLegoResume} target="_blank" rel="noreferrer" ><img alt="" src={resume} id="resume" /></a>
       <a href="mailto:legobw@gmail.com" target="_blank" rel="noreferrer" ><img alt="" src={email} id="email" /></a>
       <a href="https://www.linkedin.com/in/brian-lego/" target="_blank" rel="noreferrer" ><img alt="" src={linkedin} id="linkedin" /></a>
