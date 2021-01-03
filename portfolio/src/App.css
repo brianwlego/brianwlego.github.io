@@ -27,6 +27,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover{
+  color: black;
+}
 
 .bold {
   font-weight: 400;
@@ -57,41 +60,64 @@ a {
 #resume{
   height: 32px;
   width: 29px;
+  font-size: 2.2em;
+  margin-left: 2px;
   border-radius: 8%;
 }
+#resume:hover{
+  cursor: pointer;
+  font-size: 2.7em;
+} 
 #github{
   height: 32px;
   width: 32px;
   border-radius: 50%;
 }
+#github:hover{
+  cursor: pointer;
+  font-size: 2.5em;
+} 
 #email{
   height: 24px;
   width: 32px;
   border-radius: 8%;
 }
+#email:hover{
+  cursor: pointer;
+  font-size: 2.4em;
+} 
 #linkedin{
   height: 32px;
   width: 32px;
+  font-size: 2.2em;
   border-radius: 8%;
 }
+#linkedin:hover{
+  cursor: pointer;
+  font-size: 2.7em;
+} 
 #blog{
   height: 32px;
   width: 32px;
   border-radius: 8%;
 }
-#darkmode{
+#blog:hover{
+  cursor: pointer;
+  font-size: 2.5em;
+} 
+/* #darkmode{
   height: 3vh;
   background: none;
   border: none;
   border-radius: 50%;
-}
+} */
 #darkmode:hover{
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  font-size: 2.5em;
+} 
 #darkmode:active{
   border: none;
-}
+} 
 
 
 

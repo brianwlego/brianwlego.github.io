@@ -1,54 +1,54 @@
 import React from 'react'
-import blog from '../icons/blogging.png'
-import resume from '../icons/cv.png'
-import email from '../icons/email.png'
-import github from '../icons/github.png'
-import linkedin from '../icons/linkedin.png'
 import BrianLegoResume from '../BrianLegoResume.pdf'
-import darkMode from '../darkMode/darkmode.png'
+import { MDBIcon} from "mdbreact";
 
 function NavBar({toggle, theme}){
 
 
   return(
     <div id="navbar">
-      <img 
-        id="darkmode"
-        alt="" 
-        src={darkMode} 
-        onClick={() => toggle()}/>
+        <MDBIcon 
+          id="darkmode"
+          size="2x"
+          far
+          icon="moon"
+          onClick={() => toggle()}/>
       <a href={BrianLegoResume} target="_blank" rel="noreferrer" >
-        <img 
+        <MDBIcon 
+          icon="file-alt" 
+          size="2x"
           className={theme === 'dark' ? 'invert' : ''} 
-          alt="" 
-          src={resume} 
           id="resume" />
       </a>
       <a href="mailto:legobw@gmail.com" target="_blank" rel="noreferrer" >
-        <img 
+        <MDBIcon 
         className={theme === 'dark' ? 'invert' : ''} 
-        alt="" 
-        src={email} 
+        size="2x"
+        icon="envelope-open"
         id="email" />
       </a>
       <a href="https://www.linkedin.com/in/brian-lego/" target="_blank" rel="noreferrer" >
-        <img 
+        <MDBIcon 
           className={theme === 'dark' ? 'invert' : ''} 
-          alt="" 
-          src={linkedin} 
+          size="2x"
+          fab
+          icon="linkedin"
           id="linkedin" />
         </a>
       <a href="https://github.com/brianwlego" target="_blank" rel="noreferrer" >
-        <img className={theme === 'dark'? 'invert' : ''} 
-        alt="" 
-        src={github} 
-        id="github" />
+        <MDBIcon 
+          className={theme === 'dark'? 'invert' : ''} 
+          size="2x"
+          fab
+          icon="github"
+          id="github" />
       </a>
       <a href="https://medium.com/@legobw" target="_blank" rel="noreferrer" >
-        <img 
+        <MDBIcon
           className={theme === 'dark' ? 'invert' : ''} 
-          alt="" 
-          src={blog} 
+          size="2x"
+          fab
+          icon="blogger-b"
           id="blog" />
         </a>
     </div>
