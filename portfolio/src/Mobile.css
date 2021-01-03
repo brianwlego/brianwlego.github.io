@@ -3,9 +3,11 @@
   #navbar{
     height: 45vh;
     width: 12vw;
+    margin-left: 5px;
   }
   .section{
-    height: 100vh;
+    min-height: 50vh;
+    /* padding-right: 5%; */
   }
 
   .bold{
@@ -13,7 +15,8 @@
   }
 
   .intro{
-    padding-left: 13%;
+    padding-top: 25%;
+    text-align: center;
   }
   .intro h3{
     font-weight: 600;
@@ -27,6 +30,10 @@
   }
   #background-header{
     width: 40vw;
+  }
+  #background-header h3{
+    font-size: x-large;
+    font-weight:bold;
   }
   .background h3{
     font-weight: 400;
@@ -48,14 +55,32 @@
   #skills-header{
     width: 40vw;
   }
+  #skills-header h3{
+    font-size: x-large;
+    font-weight:bold;
+  }
   .skills h3{
     font-weight: 400;
     font-size: 6vw;
     margin-bottom: 15%;
   }
+  #skills-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #frontend{
+    margin: 0 0 18% 0;
+  }
+  #backend{
+    margin: 0 0 18% 0;
+  }
+  #dbtools{
+    margin: 0;
+  }
   #skills-content h5{
     font-size: 5vw;
-    margin-bottom: 10%;
+    font-weight: 400;
+    margin-bottom: 5%;
   }
   #skills-content p{
     font-size: 4vw;
@@ -72,6 +97,10 @@
   }
   .project-wrapper{
     margin: 1.5vh 0;
+  }
+  #projects-header h3{
+    font-size: x-large;
+    font-weight:bold;
   }
   .projects h3{
     font-weight: 400;
