@@ -9,6 +9,7 @@ function NavBar({toggle, theme}){
     <div id="navbar">
         <MDBIcon 
           id="darkmode"
+          style={theme !== 'dark' ? {color: 'rgba(29, 29, 29, 0.95)'} : {color: 'white'}} 
           size="2x"
           far
           icon="moon"
