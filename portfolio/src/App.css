@@ -113,6 +113,9 @@ a:hover{
   color: rgb(86, 138, 250);
 } 
 #darkmode{
+  position: fixed;
+  right: 0;
+  padding: .9% 1% 0 0;
   color: rgba(29, 29, 29, 0.95);
 }
 #darkmode:hover{

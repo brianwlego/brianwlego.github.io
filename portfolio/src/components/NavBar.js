@@ -6,14 +6,15 @@ function NavBar({toggle, theme}){
 
 
   return(
+    <>
+      <MDBIcon 
+        id="darkmode"
+        style={theme !== 'dark' ? {color: 'rgba(29, 29, 29, 0.95)'} : {color: 'white'}} 
+        size="2x"
+        far
+        icon="moon"
+        onClick={() => toggle()}/>
     <div id="navbar">
-        <MDBIcon 
-          id="darkmode"
-          style={theme !== 'dark' ? {color: 'rgba(29, 29, 29, 0.95)'} : {color: 'white'}} 
-          size="2x"
-          far
-          icon="moon"
-          onClick={() => toggle()}/>
       <a href={BrianLegoResume} target="_blank" rel="noreferrer" >
         <MDBIcon 
           icon="file-alt" 
@@ -53,6 +54,7 @@ function NavBar({toggle, theme}){
           id="blog" />
         </a>
     </div>
+    </>
   )
 }
 
