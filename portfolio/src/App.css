@@ -42,6 +42,7 @@ a:hover{
 
 #navbar {
   height: 50vh;
+  min-width: 50px;
   width: 5vw;
   display: flex;
   flex-direction: column;
