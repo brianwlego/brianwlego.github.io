@@ -12,20 +12,19 @@ import { useEffect, useState } from 'react';
 
 function App() {
   useEffect(() => {
-    fetch('https://quizcard-frontend.herokuapp.com/login')
-    fetch('https://quizcard-backend.herokuapp.com/')
+    fetch('https://quizcard-frontend.herokuapp.com/')
+    fetch('https://quizcard-backend.herokuapp.com/api/v1/wakeup')
 
-    fetch('https://notfcebook-backend.herokuapp.com/login')
-    fetch('https://notfcebook.herokuapp.com/')
+    fetch('https://notfcebook-backend.herokuapp.com/api/v1/wakeup')
+    fetch('https://notfcebook.herokuapp.com/login')
 
     fetch('https://cocktail-companion.herokuapp.com/')
-    fetch('https://cocktailcompanion-api.herokuapp.com/')
+    fetch('https://cocktailcompanion-api.herokuapp.com/wakeup')
   }, []);
 
   const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
-    console.log('inside toggle')
     if (theme === 'light'){
       setTheme('dark')
     } else {

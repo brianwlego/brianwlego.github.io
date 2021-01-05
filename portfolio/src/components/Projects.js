@@ -75,7 +75,7 @@ function Projects(){
           <a href="https://quizcard-frontend.herokuapp.com/"  target="_blank" rel="noreferrer" ><h5>QuizCard &#8614;</h5></a>
           <p>A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience.</p>
           {chosenQC !== "" ? <img alt="" src={chosenQC} className="chosen" onClick={()=>setChosenQC("")}/> : null}
-          <div class="project-img-wrapper" onClick={(e)=>clickHandlerQC(e)} onScroll={()=>setChosenQC("")} >
+          <div className="project-img-wrapper" onClick={(e)=>clickHandlerQC(e)} onScroll={()=>setChosenQC("")} >
             <Image img={Login} chosen={chosenQC !== "" ? true : false} />
             <Image img={Home} chosen={chosenQC !== "" ? true : false} />
             <Image img={HomeOpen} chosen={chosenQC !== "" ? true : false} />
@@ -93,7 +93,7 @@ function Projects(){
           </a>
           <p>A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts.</p>
           {chosenFB !== "" ? <img alt="" src={chosenFB} className="chosen" onClick={()=>setChosenFB("")}/> : null}
-          <div class="project-img-wrapper" onClick={(e)=>clickHandlerFB(e)} onScroll={()=>setChosenFB("")} >
+          <div className="project-img-wrapper" onClick={(e)=>clickHandlerFB(e)} onScroll={()=>setChosenFB("")} >
             <Image img={FB1} chosen={chosenFB !== "" ? true : false} />
             <Image img={FB2} chosen={chosenFB !== "" ? true : false} />
             <Image img={FB3} chosen={chosenFB !== "" ? true : false} />
@@ -108,7 +108,7 @@ function Projects(){
           
           <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
           {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
-          <div class="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
+          <div className="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
             <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
             <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
             <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
