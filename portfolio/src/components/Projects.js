@@ -11,6 +11,14 @@ import Deck from '../QuizCardImages/7DeckShow.png'
 import QEdit from '../QuizCardImages/8QuizEdit.png'
 import DEdit from '../QuizCardImages/9DeckEdit.png'
 
+import MH1 from '../MixHubImages/1mh.png'
+import MH2 from '../MixHubImages/1mh.png'
+import MH3 from '../MixHubImages/1mh.png'
+import MH4 from '../MixHubImages/1mh.png'
+import MH5 from '../MixHubImages/1mh.png'
+import MH6 from '../MixHubImages/1mh.png'
+import MH7 from '../MixHubImages/1mh.png'
+
 import CC1 from '../CCImages/1cc.png'
 import CC2 from '../CCImages/2cc.png'
 import CC3 from '../CCImages/3cc.png'
@@ -104,6 +112,22 @@ function Projects(){
         <div className="project-wrapper cocktail">
           <a href="https://cocktail-companion.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>Cocktail Companion &#8614;</h5>
+          </a>
+          
+          <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
+          {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
+          <div className="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
+            <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC4} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
+            <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
+          </div>
+
+          <div className="project-wrapper mixhub">
+          <a href="https://mixhub.herokuapp.com/" target="_blank" rel="noreferrer">
+            <h5>MixHub &#8614;</h5>
           </a>
           
           <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
