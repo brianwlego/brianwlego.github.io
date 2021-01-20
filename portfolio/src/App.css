@@ -307,10 +307,16 @@ a:hover{
   text-align: left;
 }
 
-
 .cocktail {
   align-items: flex-end;
 }
 .cocktail p{
   text-align: right;
+}
+
+.mixhub {
+  align-items: flex-start;
+}
+.mixhub p{
+  text-align: left;
 }

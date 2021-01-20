@@ -12,12 +12,12 @@ import QEdit from '../QuizCardImages/8QuizEdit.png'
 import DEdit from '../QuizCardImages/9DeckEdit.png'
 
 import MH1 from '../MixHubImages/1mh.png'
-import MH2 from '../MixHubImages/1mh.png'
-import MH3 from '../MixHubImages/1mh.png'
-import MH4 from '../MixHubImages/1mh.png'
-import MH5 from '../MixHubImages/1mh.png'
-import MH6 from '../MixHubImages/1mh.png'
-import MH7 from '../MixHubImages/1mh.png'
+import MH2 from '../MixHubImages/2mh.png'
+import MH3 from '../MixHubImages/3mh.png'
+import MH4 from '../MixHubImages/4mh.png'
+import MH5 from '../MixHubImages/5mh.png'
+import MH6 from '../MixHubImages/6mh.png'
+import MH7 from '../MixHubImages/7mh.png'
 
 import CC1 from '../CCImages/1cc.png'
 import CC2 from '../CCImages/2cc.png'
@@ -36,6 +36,7 @@ function Projects(){
   const [chosenQC, setChosenQC] = useState("")
   const [chosenCC, setChosenCC] = useState("")
   const [chosenFB, setChosenFB] = useState("")
+  const [chosenMH, setChosenMH] = useState("")
 
   const clickHandlerQC = (e) => {
     const ele = e.target.src
@@ -61,6 +62,14 @@ function Projects(){
       setChosenFB(e.target.src)
     }
   }
+  const clickHandlerMH = (e) => {
+    const ele = e.target.src
+    if (ele === chosenMH){
+      setChosenMH("")
+    } else{
+      setChosenMH(e.target.src)
+    }
+  }
 
   const sectionClickhandler = (e) => {
     if (e.target.className === "project-img"){
@@ -69,6 +78,7 @@ function Projects(){
       setChosenCC("")
       setChosenQC("")
       setChosenFB("")
+      setChosenMH("")
     }
   }
 
@@ -124,21 +134,22 @@ function Projects(){
             <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
             <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
           </div>
-
+        </div>
           <div className="project-wrapper mixhub">
           <a href="https://mixhub.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>MixHub &#8614;</h5>
           </a>
           
-          <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
-          {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
-          <div className="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
-            <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC4} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
+          <p>A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists </p>
+          {chosenMH !== "" ? <img alt="" src={chosenMH} className="chosen" onClick={()=>setChosenMH("")}/> : null}
+          <div className="project-img-wrapper" onClick={(e)=>clickHandlerMH(e)} onScroll={()=>setChosenMH("")} >
+            <Image img={MH1} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH2} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH3} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH4} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH5} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH6} chosen={chosenMH !== "" ? true : false} />
+            <Image img={MH7} chosen={chosenMH !== "" ? true : false} />
           </div>
         </div>
       </div>
