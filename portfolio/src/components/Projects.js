@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import Image from './Image'
+import ProjectCard from './ProjectCard'
 
-import Login from '../QuizCardImages/1Login.png'
-import Home from '../QuizCardImages/2HomePage.png'
-import Profile from '../QuizCardImages/3Profile.png'
-import HomeOpen from '../QuizCardImages/4HomePageOpen.png'
-import Quiz from '../QuizCardImages/5QuizShow.png'
-import QuizAnswer from '../QuizCardImages/6QuizShowAnswer.png'
-import Deck from '../QuizCardImages/7DeckShow.png'
-import QEdit from '../QuizCardImages/8QuizEdit.png'
-import DEdit from '../QuizCardImages/9DeckEdit.png'
+import QC1 from '../QuizCardImages/1Login.png'
+import QC2 from '../QuizCardImages/2HomePage.png'
+import QC3 from '../QuizCardImages/3Profile.png'
+import QC4 from '../QuizCardImages/4HomePageOpen.png'
+import QC5 from '../QuizCardImages/5QuizShow.png'
+import QC6 from '../QuizCardImages/6QuizShowAnswer.png'
+import QC7 from '../QuizCardImages/7DeckShow.png'
+import QC8 from '../QuizCardImages/8QuizEdit.png'
+import QC9 from '../QuizCardImages/9DeckEdit.png'
 
 import MH1 from '../MixHubImages/1mh.png'
 import MH2 from '../MixHubImages/2mh.png'
@@ -89,36 +90,18 @@ function Projects(){
         <h3>Projects</h3>
       </div>
       <div id="projects-content">
-        <div className="project-wrapper quizcard">
-          <a href="https://quizcard-frontend.herokuapp.com/"  target="_blank" rel="noreferrer" ><h5>QuizCard &#8614;</h5></a>
-          <p>A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience.</p>
-          {chosenQC !== "" ? <img alt="" src={chosenQC} className="chosen" onClick={()=>setChosenQC("")}/> : null}
-          <div className="project-img-wrapper" onClick={(e)=>clickHandlerQC(e)} onScroll={()=>setChosenQC("")} >
-            <Image img={Login} chosen={chosenQC !== "" ? true : false} />
-            <Image img={Home} chosen={chosenQC !== "" ? true : false} />
-            <Image img={HomeOpen} chosen={chosenQC !== "" ? true : false} />
-            <Image img={Profile} chosen={chosenQC !== "" ? true : false} />
-            <Image img={Quiz} chosen={chosenQC !== "" ? true : false} />
-            <Image img={QuizAnswer} chosen={chosenQC !== "" ? true : false} />
-            <Image img={Deck} chosen={chosenQC !== "" ? true : false} />
-            <Image img={QEdit} chosen={chosenQC !== "" ? true : false} />
-            <Image img={DEdit} chosen={chosenQC !== "" ? true : false} />
-          </div>
-        </div>
-        <div className="project-wrapper fcebook">
-          <a href="https://notfcebook.herokuapp.com/" target="_blank" rel="noreferrer">
-            <h5>!fcebook &#8614;</h5>
-          </a>
-          <p>A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts.</p>
-          {chosenFB !== "" ? <img alt="" src={chosenFB} className="chosen" onClick={()=>setChosenFB("")}/> : null}
-          <div className="project-img-wrapper" onClick={(e)=>clickHandlerFB(e)} onScroll={()=>setChosenFB("")} >
-            <Image img={FB1} chosen={chosenFB !== "" ? true : false} />
-            <Image img={FB2} chosen={chosenFB !== "" ? true : false} />
-            <Image img={FB3} chosen={chosenFB !== "" ? true : false} />
-            <Image img={FB4} chosen={chosenFB !== "" ? true : false} />
-            <Image img={FB5} chosen={chosenFB !== "" ? true : false} />
-          </div>
-        </div>
+        <ProjectCard 
+          link="https://quizcard-frontend.herokuapp.com/"
+          title="Quizcard"
+          description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
+          images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
+          />
+        <ProjectCard
+          link="https://notfcebook.herokuapp.com/"
+          title="!fcebook"
+          description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
+          images={[FB1,FB2,FB3,FB4,FB5]}
+        />
         <div className="project-wrapper cocktail">
           <a href="https://cocktail-companion.herokuapp.com/" target="_blank" rel="noreferrer">
             <h5>Cocktail Companion &#8614;</h5>
@@ -152,6 +135,12 @@ function Projects(){
             <Image img={MH7} chosen={chosenMH !== "" ? true : false} />
           </div>
         </div>
+        <ProjectCard 
+          link="https://quizcard-frontend.herokuapp.com/"
+          title="Quizcard"
+          description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
+          images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
+        />
       </div>
     </section>
   )
