@@ -34,52 +34,10 @@ import FB4 from '../FBImages/4fb.png'
 import FB5 from '../FBImages/5fb.png'
 
 function Projects(){
-  const [chosenQC, setChosenQC] = useState("")
-  const [chosenCC, setChosenCC] = useState("")
-  const [chosenFB, setChosenFB] = useState("")
-  const [chosenMH, setChosenMH] = useState("")
-
-  const clickHandlerQC = (e) => {
-    const ele = e.target.src
-    if (ele === chosenQC){
-      setChosenQC("")
-    } else{
-      setChosenQC(e.target.src)
-    }
-  }
-  const clickHandlerCC = (e) => {
-    const ele = e.target.src
-    if (ele === chosenCC){
-      setChosenCC("")
-    } else{
-      setChosenCC(e.target.src)
-    }
-  }
-  const clickHandlerFB = (e) => {
-    const ele = e.target.src
-    if (ele === chosenFB){
-      setChosenFB("")
-    } else{
-      setChosenFB(e.target.src)
-    }
-  }
-  const clickHandlerMH = (e) => {
-    const ele = e.target.src
-    if (ele === chosenMH){
-      setChosenMH("")
-    } else{
-      setChosenMH(e.target.src)
-    }
-  }
 
   const sectionClickhandler = (e) => {
-    if (e.target.className === "project-img"){
-      
-    } else {
-      setChosenCC("")
-      setChosenQC("")
-      setChosenFB("")
-      setChosenMH("")
+    if (e.target.className !== "project-img"){
+      console.log('Hiiiii')
     }
   }
 
@@ -102,44 +60,17 @@ function Projects(){
           description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
           images={[FB1,FB2,FB3,FB4,FB5]}
         />
-        <div className="project-wrapper cocktail">
-          <a href="https://cocktail-companion.herokuapp.com/" target="_blank" rel="noreferrer">
-            <h5>Cocktail Companion &#8614;</h5>
-          </a>
-          
-          <p>Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail.</p>
-          {chosenCC !== "" ? <img alt="" src={chosenCC} className="chosen" onClick={()=>setChosenCC("")}/> : null}
-          <div className="project-img-wrapper" onClick={(e)=>clickHandlerCC(e)} onScroll={()=>setChosenCC("")} >
-            <Image img={CC1} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC2} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC3} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC4} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC5} chosen={chosenCC !== "" ? true : false} />
-            <Image img={CC6} chosen={chosenCC !== "" ? true : false} />
-          </div>
-        </div>
-          <div className="project-wrapper mixhub">
-          <a href="https://mixhub.herokuapp.com/" target="_blank" rel="noreferrer">
-            <h5>MixHub &#8614;</h5>
-          </a>
-          
-          <p>A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists </p>
-          {chosenMH !== "" ? <img alt="" src={chosenMH} className="chosen" onClick={()=>setChosenMH("")}/> : null}
-          <div className="project-img-wrapper" onClick={(e)=>clickHandlerMH(e)} onScroll={()=>setChosenMH("")} >
-            <Image img={MH1} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH2} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH3} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH4} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH5} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH6} chosen={chosenMH !== "" ? true : false} />
-            <Image img={MH7} chosen={chosenMH !== "" ? true : false} />
-          </div>
-        </div>
-        <ProjectCard 
-          link="https://quizcard-frontend.herokuapp.com/"
-          title="Quizcard"
-          description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
-          images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
+        <ProjectCard
+          link="https://cocktail-companion.herokuapp.com/"
+          title="Cocktail Companion"
+          description="Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail."
+          images={[CC1,CC2,CC3,CC4,CC5,CC6]}
+        />
+        <ProjectCard
+          link="https://mixhub.herokuapp.com/"
+          title="MixHub"
+          description="A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists."
+          images={[MH1,MH2,MH3,MH4,MH5,MH6,MH7]}
         />
       </div>
     </section>
