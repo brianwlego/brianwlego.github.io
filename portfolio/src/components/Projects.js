@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Image from './Image'
+import React from 'react'
 import ProjectCard from './ProjectCard'
 
 import QC1 from '../QuizCardImages/1Login.png'
@@ -48,30 +47,34 @@ function Projects(){
         <h3>Projects</h3>
       </div>
       <div id="projects-content">
-        <ProjectCard 
-          link="https://quizcard-frontend.herokuapp.com/"
-          title="Quizcard"
-          description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
-          images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
+        <div id='top-proj-content'>
+          <ProjectCard 
+            link="https://quizcard-frontend.herokuapp.com/"
+            title="Quizcard"
+            description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
+            images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
+            />
+          <ProjectCard
+            link="https://notfcebook.herokuapp.com/"
+            title="!fcebook"
+            description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
+            images={[FB1,FB2,FB3,FB4,FB5]}
           />
-        <ProjectCard
-          link="https://notfcebook.herokuapp.com/"
-          title="!fcebook"
-          description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
-          images={[FB1,FB2,FB3,FB4,FB5]}
-        />
-        <ProjectCard
-          link="https://cocktail-companion.herokuapp.com/"
-          title="Cocktail Companion"
-          description="Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail."
-          images={[CC1,CC2,CC3,CC4,CC5,CC6]}
-        />
-        <ProjectCard
-          link="https://mixhub.herokuapp.com/"
-          title="MixHub"
-          description="A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists."
-          images={[MH1,MH2,MH3,MH4,MH5,MH6,MH7]}
-        />
+        </div>
+        <div id='btm-proj-content'>
+          <ProjectCard
+            link="https://cocktail-companion.herokuapp.com/"
+            title="Cocktail Companion"
+            description="Single page application which allows users to search cocktails based on ingredients, a combination of ingredients, or the cocktails themself. Also gives the user the ability create their own cocktail."
+            images={[CC1,CC2,CC3,CC4,CC5,CC6]}
+          />
+          <ProjectCard
+            link="https://mixhub.herokuapp.com/"
+            title="MixHub"
+            description="A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists."
+            images={[MH1,MH2,MH3,MH4,MH5,MH6,MH7]}
+          />
+        </div>
       </div>
     </section>
   )
