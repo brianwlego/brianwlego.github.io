@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import Image from './Image'
 
 function ProjectCard(props){
-  const [chosenPic, setChosenPic] = useState('')
+  const [chosenPic, setChosenPic] = useState("")
 
   const renderImages = () => {
     return props.images.map(i => {
-      return <Image img={i} chosen={chosenPic !== "" ? true : false} />
+      return <Image img={i} chosen={chosenPic !== "" && props.clicked ? true : false} />
     })
   }
 
@@ -19,12 +19,13 @@ function ProjectCard(props){
     }
   }
 
+  console.log(props)
   
   return(
     <div className="project-wrapper">
           <a href={props.link}  target="_blank" rel="noreferrer" ><h5>{props.title} &#8614;</h5></a>
           <p>{props.description}</p>
-          {chosenPic !== "" ? <img alt="" src={chosenPic} className="chosen" onClick={()=>setChosenPic("")}/> : null}
+          {chosenPic !== "" && props.clicked ? <img alt="" src={chosenPic} className="chosen" onClick={()=>setChosenPic("")}/> : null}
           <div 
             className="project-img-wrapper" 
             onClick={(e)=>clickHandler(e)} 

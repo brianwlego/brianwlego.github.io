@@ -220,8 +220,8 @@ a:hover{
 /************** PROJECTS *************/
 .projects {
   flex-direction: row;
-  justify-content: space-evenly;
   height: fit-content;
+  padding-right: 0;
 }
 .projects h3{
   padding-right: 5%;
@@ -238,15 +238,31 @@ a:hover{
   /* text-shadow: 2px 2px 3px black; */
 }
 #projects-header{
-  width: 20vw;
+  width: 15vw;
   margin: 6px;
 }
 #projects-content{
   display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  width: 78%;
+  margin: 6px;
+}
+#top-proj-content{
+  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60vw;
-  margin: 6px;
+
+  width: 50%;
+  height: 100%;
+}
+#btm-proj-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+  height: 100%;
 }
 #projects-content h5{
   margin: 0;
@@ -255,18 +271,23 @@ a:hover{
   color: rgb(86, 138, 250);
 }
 #projects-content p{
+  text-align: center;
   font-weight: 200;
   font-size: 2vw;
 }
 .project-wrapper{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  min-height: 40%;
+  height: 45vh;
+
+  padding: 3%;
 }
 .project-img-wrapper{
-  width: 50vw;
-  min-height: 25vh;
+  width: 34vw;
   align-items: center;
   display: flex;
   overflow: auto;
@@ -279,12 +300,15 @@ a:hover{
 }
 .project-img:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer; 
 }
 .chosen{
-  width: 40vw;
+  width: 30vw;
+  height: 26vh;
   position: absolute;
   z-index: 1;
-  padding-right: 6vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  /* padding-right: 6vw; */
 }
 .blur{
   opacity: 0.3;
