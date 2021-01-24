@@ -222,6 +222,7 @@ a:hover{
   flex-direction: row;
   height: fit-content;
   padding-right: 0;
+  padding-bottom: 1%;
 }
 .projects h3{
   padding-right: 5%;
@@ -266,14 +267,15 @@ a:hover{
 }
 #projects-content h5{
   margin: 0;
+  text-align: center;
   font-size: 2.5vw;
   font-weight: 300;
   color: rgb(86, 138, 250);
 }
-#projects-content p{
+.description{
   text-align: center;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .project-wrapper{
   display: flex;
@@ -312,6 +314,12 @@ a:hover{
 }
 .blur{
   opacity: 0.3;
+}
+.stack{
+  font-size: smaller;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
 }
 
 

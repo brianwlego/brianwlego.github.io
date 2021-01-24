@@ -72,7 +72,8 @@ function Projects(){
           <ProjectCard 
             link="https://quizcard-frontend.herokuapp.com/"
             title="Quizcard"
-            description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
+            stack="React | Redux | Router - Rails | Postgres | AWS-S3"
+            description="A study aid using Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards."
             images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
             chosen={chosenQC}
             clickHandler={clickHandler}
@@ -80,7 +81,8 @@ function Projects(){
           <ProjectCard
             link="https://notfcebook.herokuapp.com/"
             title="!fcebook"
-            description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
+            stack="React | Router - Rails | Postgres | AWS-S3"
+            description="A social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
             images={[FB1,FB2,FB3,FB4,FB5]}
             chosen={chosenFB}
             clickHandler={clickHandler}
@@ -90,7 +92,8 @@ function Projects(){
           <ProjectCard
             link="https://cocktail-companion.herokuapp.com/"
             title="Cocktail Companion"
-            description="Single page application allowing users to search cocktails by name/ingredient(s) and the ability to make their own."
+            stack="Vanilla JS - Rails | SQLite"
+            description="Single page application allowing users to search cocktails by name/ingredient(s) and create their own."
             images={[CC1,CC2,CC3,CC4,CC5,CC6]}
             chosen={chosenCC}
             clickHandler={clickHandler}
@@ -98,6 +101,7 @@ function Projects(){
           <ProjectCard
             link="https://mixhub.herokuapp.com/"
             title="MixHub"
+            stack="Rails | SQLite | ERB"
             description="A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists."
             images={[MH1,MH2,MH3,MH4,MH5,MH6,MH7]}
             chosen={chosenMH}
