@@ -27,13 +27,12 @@ function Skills(){
         </div>
         <div id="dbtools">
           <h5>DB/Tools</h5>
-          <p>SQL</p>
-          <p>Postgresql</p>
-          <p>mySQL</p>
-          <p>MongoDB</p>
-          <p>AWS - s3</p>
           <p>Git</p>
           <p>GitHub</p>
+          <p>mySQL</p>
+          <p>Postgresql</p>
+          <p>MongoDB</p>
+          <p>AWS - s3</p>
         </div>
       </div>
     </section>
