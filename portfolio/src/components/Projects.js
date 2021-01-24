@@ -93,7 +93,7 @@ function Projects(){
             link="https://cocktail-companion.herokuapp.com/"
             title="Cocktail Companion"
             stack="Vanilla JS - Rails API | Postgres"
-            description="Single page application allowing users to search cocktails by name/ingredient(s) and create their own."
+            description="Application allowing users to search cocktails by name/ingredient(s) or create their own."
             images={[CC1,CC2,CC3,CC4,CC5,CC6]}
             chosen={chosenCC}
             clickHandler={clickHandler}

@@ -4,17 +4,6 @@ body{
   scroll-snap-type: y mandatory;
 }
 
-/* @media screen and (min-width: 425px) {
-  html { 
-    scroll-snap-type: y mandatory;
-  }
-  .section{
-    scroll-snap-align: start;
-  }
-} */
-
-
-
 .section {
   display: flex;
   flex-direction: column;
