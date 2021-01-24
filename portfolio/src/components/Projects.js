@@ -33,19 +33,37 @@ import FB4 from '../FBImages/4fb.png'
 import FB5 from '../FBImages/5fb.png'
 
 function Projects(){
-  const [clicked, setClicked] = useState(true)
+  const [chosenQC, setChosenQC] = useState('')
+  const [chosenFB, setChosenFB] = useState('')
+  const [chosenCC, setChosenCC] = useState('')
+  const [chosenMH, setChosenMH] = useState('')
 
-  const sectionClickhandler = (e) => {
-    if (e.target.className !== "project-img"){
-      setClicked(false)
-    } else {
-      setClicked(true)
+  const clickHandler = (e) => {
+    switch (e.target.className) {
+      case 'project-img Quizcard':
+        setChosenQC(e.target.src)
+        break;
+      case 'project-img !fcebook':
+        setChosenFB(e.target.src)
+        break;
+      case 'project-img Cocktail Companion':
+        setChosenCC(e.target.src)
+        break;
+      case 'project-img MixHub':
+        setChosenMH(e.target.src)
+        break;
+      default:
+        setChosenQC('')
+        setChosenFB('')
+        setChosenCC('')
+        setChosenMH('')
+        break;
     }
   }
 
 
   return(
-    <section className="section projects" onClick={(e)=>sectionClickhandler(e)}>
+    <section className="section projects" onClick={(e)=>clickHandler(e)}>
       <div id="projects-header">
         <h3>Projects</h3>
       </div>
@@ -56,14 +74,16 @@ function Projects(){
             title="Quizcard"
             description="A study aid that uses Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards for a more personalized experience."
             images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
-            clicked={clicked}
+            chosen={chosenQC}
+            clickHandler={clickHandler}
             />
           <ProjectCard
             link="https://notfcebook.herokuapp.com/"
             title="!fcebook"
             description="A practice exercise to recreate a social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
             images={[FB1,FB2,FB3,FB4,FB5]}
-            clicked={clicked}
+            chosen={chosenFB}
+            clickHandler={clickHandler}
           />
         </div>
         <div id='btm-proj-content'>
@@ -72,14 +92,16 @@ function Projects(){
             title="Cocktail Companion"
             description="Single page application allowing users to search cocktails by name/ingredient(s) and the ability to make their own."
             images={[CC1,CC2,CC3,CC4,CC5,CC6]}
-            clicked={clicked}
+            chosen={chosenCC}
+            clickHandler={clickHandler}
           />
           <ProjectCard
             link="https://mixhub.herokuapp.com/"
             title="MixHub"
             description="A playlist creator for users to document DJ’s tracklists at live events and festivals. User's can verify & like tracks of fellow users playlists."
             images={[MH1,MH2,MH3,MH4,MH5,MH6,MH7]}
-            clicked={clicked}
+            chosen={chosenMH}
+            clickHandler={clickHandler}
           />
         </div>
       </div>

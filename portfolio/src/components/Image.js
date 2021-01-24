@@ -7,7 +7,7 @@ function Image(props){
     <img 
       alt="" 
       src={props.img} 
-      className={props.chosen ? "project-img blur" : "project-img"}
+      className={`${props.chosen ? "project-img blur" : "project-img"} ${props.proj}`}
     />
   )
 }
