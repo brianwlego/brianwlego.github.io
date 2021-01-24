@@ -72,7 +72,7 @@ function Projects(){
           <ProjectCard 
             link="https://quizcard-frontend.herokuapp.com/"
             title="Quizcard"
-            stack="React | Redux | Router - Rails | Postgres | AWS-S3"
+            stack="React | Redux | Router - Rails API | Postgres | AWS-S3"
             description="A study aid using Quizzes and FlashCards. Allows users to create their own Quizzes/FlashCards."
             images={[QC1,QC2,QC3,QC4,QC5,QC6,QC7,QC8,QC9]}
             chosen={chosenQC}
@@ -81,7 +81,7 @@ function Projects(){
           <ProjectCard
             link="https://notfcebook.herokuapp.com/"
             title="!fcebook"
-            stack="React | Router - Rails | Postgres | AWS-S3"
+            stack="React | Router - Rails API | Postgres | AWS-S3"
             description="A social media clone that allows users to ‘follow’ friends, make posts, and comment on friend’s posts."
             images={[FB1,FB2,FB3,FB4,FB5]}
             chosen={chosenFB}
@@ -92,7 +92,7 @@ function Projects(){
           <ProjectCard
             link="https://cocktail-companion.herokuapp.com/"
             title="Cocktail Companion"
-            stack="Vanilla JS - Rails | SQLite"
+            stack="Vanilla JS - Rails API | Postgres"
             description="Single page application allowing users to search cocktails by name/ingredient(s) and create their own."
             images={[CC1,CC2,CC3,CC4,CC5,CC6]}
             chosen={chosenCC}
