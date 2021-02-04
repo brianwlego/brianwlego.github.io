@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BrianLegoResume from '../BrianLegoResume.pdf'
 import { MDBIcon} from "mdbreact";
+import {motion} from 'framer-motion'
 
 function NavBar({toggle, theme}){
+  const [hover, setHover] = useState('')
 
+  const resumePopout = () => {
+    return (
+      <motion.p 
+        animate={{x: 50}}
+        transition={{ ease: "easeIn", duration: .2 }}
+        
+      >Resume</motion.p>
+    )
+  }
+
+  // console.log(hover)
 
   return(
     <>
@@ -17,6 +30,8 @@ function NavBar({toggle, theme}){
     <div id="navbar">
       <a href={BrianLegoResume} target="_blank" rel="noreferrer" >
         <MDBIcon 
+          onMouseEnter={() => setHover('resume')}
+          onMouseLeave={() => setHover('')} 
           icon="file-alt" 
           size="2x"
           className={theme === 'dark' ? 'invert' : ''} 
@@ -53,6 +68,13 @@ function NavBar({toggle, theme}){
           icon="blogger-b"
           id="blog" />
         </a>
+    </div>
+    <div className="popouts">
+      {hover === 'resume' ? resumePopout() : null} 
+      <p>Email</p>
+      <p>LinkedIn</p>
+      <p>Github</p>
+      <p>Blog</p>
     </div>
     </>
   )

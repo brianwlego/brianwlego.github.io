@@ -112,9 +112,9 @@
   .project-img-wrapper{
     width: 70vw;
   }
-  /* #projects-header{
+  #projects-header{
     width: auto;
-  } */
+  }
   #projects-header h3{
     font-size: x-large;
     font-weight:bold;

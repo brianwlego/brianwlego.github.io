@@ -116,7 +116,19 @@ a:hover{
   border: none;
 } 
 
-
+.popouts{
+  height: 50vh;
+  min-width: 50px;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0%;
+  z-index: -1;
+  /* left: 50px; */
+}
 
 
 /************ INTRO ***************/
