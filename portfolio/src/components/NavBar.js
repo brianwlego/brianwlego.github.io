@@ -11,10 +11,6 @@ function NavBar({toggle, theme}){
   const [blog, cycleBlog] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 40, opacity: 1})
 
 
-
-
-
-
   return(
     <>
       <MDBIcon 
