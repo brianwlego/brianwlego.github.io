@@ -5,6 +5,11 @@
     width: 12vw;
     margin-left: 5px;
   }
+
+  .popouts{
+    display: none;
+  }
+
   .section{
     min-height: 50vh;
     /* padding-right: 5%; */
