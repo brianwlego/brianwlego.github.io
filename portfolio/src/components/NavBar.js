@@ -20,7 +20,7 @@ function NavBar({toggle, theme}){
         far
         icon="moon"
         onClick={() => toggle()}/>
-    <div id="navbar" style={{background: theme === 'dark' ? '#25282e' : 'white'}}>
+    <div id="navbar" className={theme === 'dark' ? 'dark-b-ground' : 'light-b-ground'}>
       <a href={BrianLegoResume} target="_blank" rel="noreferrer" >
         <MDBIcon 
           onMouseOver={()=>cycleResume()} 

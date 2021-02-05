@@ -16,6 +16,12 @@
     padding: 2% 2% 0 0;
     top: 0;
   }
+  .dark-b-ground{
+    background: #25282e;
+  }
+  .light-b-ground{
+    background: white;
+  }
 
   .popouts{
     display: none;
