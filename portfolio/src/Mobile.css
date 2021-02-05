@@ -10,6 +10,9 @@
     width: 100vw;
     flex-direction: row-reverse;
   }
+  #darkmode{
+    padding: 2% 2% 0 0;
+  }
 
   .popouts{
     display: none;
@@ -17,7 +20,6 @@
 
   .section{
     min-height: 50vh;
-    /* padding-right: 5%; */
   }
 
   .bold{
