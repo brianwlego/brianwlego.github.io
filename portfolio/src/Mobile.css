@@ -1,9 +1,14 @@
 @media screen and (max-width: 600px) {
   
+  .App{
+    height: 90vh;
+    overflow: scroll;
+  }
+
   #navbar{
-    height: 45vh;
-    width: 12vw;
-    margin-left: 5px;
+    height: 10vh;
+    width: 100vw;
+    flex-direction: row-reverse;
   }
 
   .popouts{
@@ -23,6 +28,11 @@
     padding-top: 25%;
     text-align: center;
   }
+
+  #intro-hi-hand{
+    justify-content: center;
+  } 
+
   .intro h3{
     font-weight: 600;
     font-size: 6.5vw;

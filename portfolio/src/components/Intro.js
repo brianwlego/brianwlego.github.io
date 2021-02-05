@@ -7,7 +7,7 @@ function Intro() {
 
   return (
     <section className="section intro">
-      <div style={{display: 'flex'}}>
+      <div style={{display: 'flex'}} id="intro-hi-hand">
         <h3>Hi! </h3>
         <motion.h3 
           id="waving-hand"

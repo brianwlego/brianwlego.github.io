@@ -144,9 +144,12 @@ a:hover{
   font-size: 4vw;
   margin-right: 8px;
 }
+#intro-hi-hand{
+  display: flex;
+  align-items: center;
+}
 #waving-hand{
   font-size: 3.6vw;
-  
 }
 
 
