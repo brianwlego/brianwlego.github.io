@@ -14,7 +14,9 @@ function ProjectCard(props){
   return(
     <div className="project-wrapper">
         <div>
-          <a href={props.link}  target="_blank" rel="noreferrer" ><h5>{props.title} &#8614;</h5></a>
+          <a href={props.link}  target="_blank" rel="noreferrer" >
+            <h5>{props.title} &#8614;</h5>
+          </a>
           <p className="stack">{props.stack}</p>
         </div>
           <p className="description">{props.description}</p>

@@ -25,7 +25,9 @@ function App() {
   }, []);
 
 
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(6 < new Date().getHours() < 18 ? 'dark' : 'light')
+  
+
 
   const toggleTheme = () => {
     if (theme === 'light'){
