@@ -6,10 +6,11 @@
   }
 
   #navbar{
-    height: 10vh;
+    height: 12vh;
     width: 100vw;
     flex-direction: row-reverse;
-    padding-bottom: 4%;
+    padding: 5% 0 8% 0;
+    border-top: 1.5px solid gray;
   }
   #darkmode{
     padding: 2% 2% 0 0;
