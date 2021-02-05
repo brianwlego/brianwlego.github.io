@@ -129,6 +129,10 @@ a:hover{
   z-index: -1;
   padding-top: 14px;
 }
+.popouts p{
+  font-weight: 500;
+  font-size:large;
+}
 
 
 /************ INTRO ***************/

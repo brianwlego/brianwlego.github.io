@@ -4,11 +4,11 @@ import { MDBIcon} from "mdbreact";
 import {motion, useCycle} from 'framer-motion'
 
 function NavBar({toggle, theme}){
-  const [resume, cycleResume] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 52, opacity: 1})
-  const [email, cycleEmail] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 45, opacity: 1})
-  const [linkedin, cycleLinkedIn] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 55, opacity: 1})
-  const [github, cycleGithub] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 48, opacity: 1})
-  const [blog, cycleBlog] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 40, opacity: 1})
+  const [resume, cycleResume] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 58, opacity: 1})
+  const [email, cycleEmail] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 50, opacity: 1})
+  const [linkedin, cycleLinkedIn] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 60, opacity: 1})
+  const [github, cycleGithub] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 54, opacity: 1})
+  const [blog, cycleBlog] = useCycle({x: 0, opacity: 0, transition: {duration: .2}},{x: 46, opacity: 1})
 
 
   return(
@@ -73,7 +73,7 @@ function NavBar({toggle, theme}){
     <div className="popouts">
       <motion.p animate={resume}>Resume</motion.p> 
       <motion.p animate={email}>Email</motion.p>
-      <motion.p animate={linkedin}>LinkedIn</motion.p>
+      <motion.p animate={linkedin}>Linkedin</motion.p>
       <motion.p animate={github}>GitHub</motion.p>
       <motion.p animate={blog}>Blog</motion.p>
     </div>
