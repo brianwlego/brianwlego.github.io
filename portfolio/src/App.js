@@ -11,21 +11,8 @@ import { GlobalStyles } from "./darkMode/global";
 import { useEffect, useState } from 'react';
 
 function App() {
-  useEffect(() => {
-      fetch('https://quizcard-frontend.herokuapp.com/')
-      fetch('https://quizcard-backend.herokuapp.com/api/v1/wakeup')
-  
-      fetch('https://notfcebook-backend.herokuapp.com/api/v1/wakeup')
-      fetch('https://notfcebook.herokuapp.com/login')
-  
-      fetch('https://cocktail-companion.herokuapp.com/')
-      fetch('https://cocktailcompanion-api.herokuapp.com/wakeup')
-  
-      fetch('https://mixhub.herokuapp.com/')
-  }, []);
 
   let [mobile, setMobile] = useState(window.innerWidth < 600 ? true : false)
-
   const [theme, setTheme] = useState(6 > new Date().getHours() > 18 ? 'dark' : 'light')
   
 
@@ -38,7 +25,6 @@ function App() {
     }
   }
 
-  console.log(mobile)
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>

@@ -5,7 +5,7 @@ function ProjectCard(props){
 
   const renderImages = () => {
     return props.images.map(i => {
-      return <Image img={i} proj={props.title} chosen={props.chosen !== "" ? true : false} />
+      return <Image key={i.id} img={i.src.default} proj={props.title} chosen={props.chosen !== "" ? true : false} />
     })
   }
 
@@ -14,7 +14,10 @@ function ProjectCard(props){
   return(
     <div className="project-wrapper">
         <div>
-          <a href={props.link}  target="_blank" rel="noreferrer" >
+          <a 
+          // href={props.link}  
+          target="_blank" 
+          rel="noreferrer" >
             <h5>{props.title} &#8614;</h5>
           </a>
           <p className="stack">{props.stack}</p>
